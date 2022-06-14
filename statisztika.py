@@ -42,7 +42,7 @@ def legritkabb_karakter(txt):
     for betu in txt:
       betu = betu
       stat[betu] = stat.get(betu, 0) + 1
-    return min([(db, betu) for betu, db in stat.items()])[1]
+    return ''.join(min([(db, betu) for betu, db in stat.items()])[1])
 
       
 # 7
